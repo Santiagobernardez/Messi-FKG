@@ -14,7 +14,7 @@ header{
 
 .grid{
     display: grid;
-    grid-template-rows:  36% 34% 20% 10%;
+    grid-template-rows:  39% 33% 18% 10%;
     grid-template-areas: 
     "header"
     "centro"
@@ -37,7 +37,7 @@ header{
     grid-area: video600;
 }
 
-footer{
+.pie, .piec{
     grid-area: footer;
 }
 .H2titulo{
