@@ -11,16 +11,88 @@ a{
 header{
     width: 100%;
 }
-
+.marco{
+    justify-items: center;
+    text-align: center;
+    width: 250px;
+    height: 140px;
+    background-color: rgb(216, 32, 84);
+    border-radius: 5px;
+    border-style: unset;
+    border-color: rgb(164, 19, 60);
+}
+.informacion{
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .grid{
     display: grid;
-    grid-template-rows:  39% 33% 18% 10%;
+    grid-template-rows:  26% 47% 18% 9%;
     grid-template-areas: 
     "header"
     "centro"
     "video600"
     "footer";
 
+}
+.grids{
+    display: grid;
+    grid-template-rows: 30% 43% 16% 11%;
+    grid-template-areas: 
+    "header"
+    "centros"
+    "videos600"
+    "footer";
+}
+.header{
+    width: 100%;
+}
+.centros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.imagenes{
+    justify-content: center;
+}
+.imagen001, .imagen002{ 
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border: inset 10px rgb(141, 153, 174);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 2.5s;
+}
+.centros:hover .img001{
+    transform: translateX(-100px)
+    }
+    
+    .centros:hover .img002{
+        transform: translateX(100px)
+        }
+.header{
+    grid-area: header;
+}
+.centros{
+    grid-area: centros;
+}
+.videos600{
+    grid-area: videos600
+}
+.videos600{
+    display: flex;
+    justify-content: center;
 }
 .head2{
     text-align: center;
@@ -135,7 +207,7 @@ header{
     grid-template-areas: 
     "head1"
     "center1"
-    "pien"
+    "footer"
     ;
 }
 .head1{
@@ -144,8 +216,8 @@ header{
 .center1{
     grid-area: center1;
 }
-#pien{
-    grid-area: pien;
+.pie{
+    grid-area: footer;
 }
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -305,11 +377,11 @@ body{
     transition: all 2.5s;
 }
 .centro:hover .img01{
-transform: translateX(-200px)
+transform: translateX(-100px)
 }
 
 .centro:hover .img03{
-    transform: translateX(200px)
+    transform: translateX(100px)
     }
 .video600{
     display: flex;
@@ -389,10 +461,10 @@ footer{
     grid-template-areas: 
     "encabezado"
     "centros"
-    "pie";
+    "footer";
 }
-#piec{
-    grid-area: pie;
+.pie{
+    grid-area: footer;
 }
 
 .center{
@@ -410,7 +482,7 @@ footer{
     
     .grid{
         display: grid;
-        grid-template-rows:  35% 38% 19% 8%;
+        grid-template-rows:  25% 46% 19% 10%;
         grid-template-areas: 
         "header"
         "centro"
@@ -444,7 +516,86 @@ footer{
         text-decoration: underline;
     
     }
+    .grids{
+        display: grid;
+        grid-template-rows: 30% 43% 16% 11%;
+        grid-template-areas: 
+        "header"
+        "centros"
+        "videos600"
+        "footer";
+    }
+    .header{
+        width: 100%;
+    }
+    .centros{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
+    }
+    .imagenes{
+        justify-content: center;
+    }
+    .imagen001, .imagen002{ 
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        border: inset 10px rgb(141, 153, 174);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 2.5s;
+    }
+    .centros:hover .img001{
+        transform: translateX(-100px)
+        }
+        
+        .centros:hover .img002{
+            transform: translateX(100px)
+            }
+    .header{
+        grid-area: header;
+    }
+    .centros{
+        grid-area: centros;
+    }
+    .videos600{
+        grid-area: videos600
+    }
+    .videos600{
+        display: flex;
+        justify-content: center;
+    }
+    .centro:hover .img01{
+        transform: translateX(-100px)
+    }
+        
+    .centro:hover .img03{
+            transform: translateX(100px)
+    }
+    .marco{
+    justify-items: center;
+    text-align: center;
+    width: 320px;
+    height: 220px;
+    background-color: rgb(216, 32, 84);
+    border-radius: 5px;
+    border-style: unset;
+    border-color: rgb(164, 19, 60);
+    }
+    .informacion{
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
     .nav-link{
         color: rgb(216, 151, 60);
         background-color: rgb(114, 9, 183);
@@ -494,7 +645,7 @@ footer{
         width: 100%;
         margin-bottom: 50px;
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
     
@@ -586,7 +737,7 @@ footer{
         grid-template-areas: 
         "head1"
         "center1"
-        "pien"
+        "footer"
         ;
     }
     .head1{
@@ -595,8 +746,8 @@ footer{
     .center1{
         grid-area: center1;
     }
-    #pien{
-        grid-area: pien;
+    .pie{
+        grid-area: footer;
     }
     footer{
         width: 100%;
@@ -647,7 +798,7 @@ footer{
     
     .grid{
         display: grid;
-        grid-template-rows:  34% 34% 23% 9%;
+        grid-template-rows:  23% 47% 21% 9%;
         grid-template-areas: 
         "header"
         "centro"
@@ -681,6 +832,7 @@ footer{
         text-decoration: underline;
     
     }
+    
     .nav-link{
         background-color: rgb(192, 27, 74);
     }
@@ -722,11 +874,90 @@ footer{
         width: 100%;
         background-color: rgb(237, 242, 244)
     }
+    .grids{
+        display: grid;
+        grid-template-rows: 27% 42% 20% 11%;
+        grid-template-areas: 
+        "header"
+        "centros"
+        "videos600"
+        "footer";
+    }
+    .header{
+        width: 100%;
+    }
+    .centros{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
+    }
+    .imagenes{
+        justify-content: center;
+    }
+    .imagen001, .imagen002{ 
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        border: inset 10px rgb(141, 153, 174);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 2.5s;
+    }
+    .centros:hover .img001{
+        transform: translateX(-150px)
+        }
+        
+        .centros:hover .img002{
+            transform: translateX(150px)
+            }
+    .header{
+        grid-area: header;
+    }
+    .centros{
+        grid-area: centros;
+    }
+    .videos600{
+        grid-area: videos600
+    }
+    .videos600{
+        display: flex;
+        justify-content: center;
+    }
+    .centro:hover .img01{
+        transform: translateX(-200px)
+    }
+        
+    .centro:hover .img03{
+            transform: translateX(200px)
+    }
+    .marco{
+    justify-items: center;
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(216, 32, 84);
+    border-radius: 5px;
+    border-style: unset;
+    border-color: rgb(164, 19, 60);
+    }
+    .informacion{
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
     .centro{
         width: 100%;
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
     
@@ -820,7 +1051,7 @@ footer{
         grid-template-areas: 
         "head1"
         "center1"
-        "pien"
+        "footer"
         ;
     }
     .head1{
@@ -829,8 +1060,8 @@ footer{
     .center1{
         grid-area: center1;
     }
-    #pien{
-        grid-area: pien;
+    .pie{
+        grid-area: footer;
     }
     footer{
         width: 100%;
@@ -875,7 +1106,7 @@ footer{
 @media (min-width:992px){
     .grid{
         display: grid;
-        grid-template-rows:  23% 40% 27% 10%;
+        grid-template-rows:  16% 52% 26% 10%;
         grid-template-areas: 
         "header"
         "centro"
@@ -913,7 +1144,7 @@ footer{
     
     .grid{
         display: grid;
-        grid-template-rows:  28% 33% 30% 9%;
+        grid-template-rows:  17% 47% 28% 8%;
         grid-template-areas: 
         "header"
         "centro"
@@ -947,6 +1178,86 @@ footer{
         font-family: 'Secular One', sans-serif;
         text-decoration: underline;
     
+    }
+    .grids{
+        display: grid;
+        grid-template-rows: 20% 44% 25% 11%;
+        grid-template-areas: 
+        "header"
+        "centros"
+        "videos600"
+        "footer";
+    }
+    .header{
+        width: 100%;
+    }
+    .centros{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .imagenes{
+        justify-content: center;
+    }
+    .imagen001, .imagen002{ 
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        border: inset 10px rgb(141, 153, 174);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 2.5s;
+    }
+    .centros:hover .img001{
+        transform: translateX(-200px)
+        }
+        
+        .centros:hover .img002{
+            transform: translateX(200px)
+            }
+    .header{
+        grid-area: header;
+    }
+    .centros{
+        grid-area: centros;
+    }
+    .videos600{
+        grid-area: videos600
+    }
+    .videos600{
+        display: flex;
+        justify-content: center;
+    }
+    .centro:hover .img01{
+        transform: translateX(-200px)
+    }
+        
+    .centro:hover .img03{
+            transform: translateX(200px)
+    }
+    .marco{
+    justify-items: center;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(216, 32, 84);
+    border-radius: 5px;
+    border-style: unset;
+    border-color: rgb(164, 19, 60);
+    }
+    .informacion{
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .nav-link{
         background-color: rgb(192, 27, 74);
@@ -988,7 +1299,7 @@ footer{
     .centro{
         width: 100%;
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
     
@@ -1086,7 +1397,7 @@ footer{
         grid-template-areas: 
         "head1"
         "center1"
-        "pien"
+        "footer"
         ;
     }
     .head1{
@@ -1095,8 +1406,8 @@ footer{
     .center1{
         grid-area: center1;
     }
-    #pien{
-        grid-area: pien;
+    .pie{
+        grid-area: footer;
     }
     footer{
         width: 100%;
