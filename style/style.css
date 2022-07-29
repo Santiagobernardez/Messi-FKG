@@ -15,7 +15,7 @@ header{
     justify-items: center;
     text-align: center;
     width: 250px;
-    height: 140px;
+    height: 150px;
     background-color: rgb(216, 32, 84);
     border-radius: 5px;
     border-style: unset;
@@ -31,7 +31,7 @@ header{
 }
 .grid{
     display: grid;
-    grid-template-rows:  26% 47% 18% 9%;
+    grid-template-rows:  27% 46% 18% 9%;
     grid-template-areas: 
     "header"
     "centro"
@@ -41,17 +41,37 @@ header{
 }
 .grids{
     display: grid;
-    grid-template-rows: 30% 43% 16% 11%;
+    grid-template-rows: 21% 27% 10% 26% 10% 6%;
     grid-template-areas: 
     "header"
     "centros"
     "videos600"
+    "centros1"
+    "videos602"
     "footer";
+}
+.pie{
+    grid-area: footer;
+}
+.centros1{
+    grid-area: centros1;
+
+}
+.videos602{
+    grid-area: videos602;
 }
 .header{
     width: 100%;
 }
-.centros{
+.centros1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.centros, .section01, .section02, .section03{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -74,12 +94,19 @@ header{
     align-items: center;
     transition: all 2.5s;
 }
-.centros:hover .img001{
-    transform: translateX(-100px)
+.centros1:hover .img001{
+    transform: translateX(-50px)
     }
     
-    .centros:hover .img002{
-        transform: translateX(100px)
+.centros1:hover .img002{
+        transform: translateX(50px)
+        }
+
+        .centros:hover .img001{
+            transform: translateX(-50px)
+        }
+        .centros:hover .img002{
+            transform: translateX(50px)
         }
 .header{
     grid-area: header;
@@ -377,11 +404,11 @@ body{
     transition: all 2.5s;
 }
 .centro:hover .img01{
-transform: translateX(-100px)
+transform: translateX(-50px)
 }
 
 .centro:hover .img03{
-    transform: translateX(100px)
+    transform: translateX(50px)
     }
 .video600{
     display: flex;
@@ -392,6 +419,7 @@ transform: translateX(-100px)
 }
 
 .titulo{
+    margin: 0%;
     font-weight: 700;
     color: rgb(216, 151, 60);
     text-align: center;
@@ -413,7 +441,31 @@ transform: translateX(-100px)
     text-align: center;
 
 }
-
+.grids3{
+    display: grid;
+    grid-template-rows: 15% 27% 26% 27% 5%;
+    grid-template-areas: 
+    "header"
+    "section01"
+    "section02"
+    "section03"
+    "footer";
+}
+.header{
+    grid-area: header;
+}
+.sections01{
+    grid-area: sections01;
+}
+.sections02{
+    grid-area: sections02;
+}
+.sections03{
+    grid-area: sections03;
+}
+.pie{
+    grid-area: footer;
+}
 footer{
     width: 100%;
     margin-top: 70px;
@@ -518,15 +570,38 @@ footer{
     }
     .grids{
         display: grid;
-        grid-template-rows: 30% 43% 16% 11%;
+        grid-template-rows: 18% 27% 10% 28% 12% 5%;
         grid-template-areas: 
         "header"
         "centros"
         "videos600"
+        "centros1"
+        "videos602"
         "footer";
+    }
+    .pie{
+        grid-area: footer;
+    }
+    .centros{
+        grid-area: centros;
+    }
+    .centros1{
+        grid-area: centros1;
+    
+    }
+    .videos602{
+        grid-area: videos602;
     }
     .header{
         width: 100%;
+    }
+    .centros1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
     }
     .centros{
         width: 100%;
@@ -536,6 +611,32 @@ footer{
         align-items: center;
     
     }
+    .grids3{
+        display: grid;
+        grid-template-rows: 13% 27% 28% 28% 4%;
+        grid-template-areas: 
+        "header"
+        "section01"
+        "section02"
+        "section03"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .sections01{
+        grid-area: sections01;
+    }
+    .sections02{
+        grid-area: sections02;
+    }
+    .sections03{
+        grid-area: sections03;
+    }
+    footer{
+        grid-area: footer;
+    }
+
     .imagenes{
         justify-content: center;
     }
@@ -558,6 +659,12 @@ footer{
         .centros:hover .img002{
             transform: translateX(100px)
             }
+            .centros1:hover .img002{
+                transform: translateX(200px)
+                }
+                .centros1:hover .img001{
+                    transform: translateX(-200px)
+                    }
     .header{
         grid-area: header;
     }
@@ -581,8 +688,8 @@ footer{
     .marco{
     justify-items: center;
     text-align: center;
-    width: 320px;
-    height: 220px;
+    width: 350px;
+    height: 250px;
     background-color: rgb(216, 32, 84);
     border-radius: 5px;
     border-style: unset;
@@ -876,15 +983,35 @@ footer{
     }
     .grids{
         display: grid;
-        grid-template-rows: 27% 42% 20% 11%;
+        grid-template-rows: 16% 25% 14% 26% 13% 6%;
         grid-template-areas: 
         "header"
         "centros"
         "videos600"
+        "centros1"
+        "videos602"
         "footer";
+    }
+    .pie{
+        grid-area: footer;
+    }
+    .centros1{
+        grid-area: centros1;
+    
+    }
+    .videos602{
+        grid-area: videos602;
     }
     .header{
         width: 100%;
+    }
+    .centros1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
     }
     .centros{
         width: 100%;
@@ -893,6 +1020,31 @@ footer{
         justify-content: center;
         align-items: center;
     
+    }
+    .grids3{
+        display: grid;
+        grid-template-rows: 12% 28% 28% 29% 3%;
+        grid-template-areas: 
+        "header"
+        "section01"
+        "section02"
+        "section03"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .sections01{
+        grid-area: sections01;
+    }
+    .sections02{
+        grid-area: sections02;
+    }
+    .sections03{
+        grid-area: sections03;
+    }
+    .pie{
+        grid-area: footer;
     }
     .imagenes{
         justify-content: center;
@@ -936,11 +1088,17 @@ footer{
     .centro:hover .img03{
             transform: translateX(200px)
     }
+    .centros1:hover .img002{
+        transform: translateX(200px)
+        }
+        .centros1:hover .img001{
+            transform: translateX(-200px)
+            }
     .marco{
     justify-items: center;
     text-align: center;
-    width: 500px;
-    height: 250px;
+    width: 550px;
+    height: 300px;
     background-color: rgb(216, 32, 84);
     border-radius: 5px;
     border-style: unset;
@@ -1181,17 +1339,78 @@ footer{
     }
     .grids{
         display: grid;
-        grid-template-rows: 20% 44% 25% 11%;
+        grid-template-rows: 11% 27% 15% 28% 14% 5%;
         grid-template-areas: 
         "header"
         "centros"
         "videos600"
+        "centros1"
+        "videos602"
         "footer";
+    }
+    .pie{
+        grid-area: footer;
+    }
+    .centros1{
+        grid-area: centros1;
+    
+    }
+    .videos602{
+        grid-area: videos602;
     }
     .header{
         width: 100%;
     }
+    .centros1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
     .centros{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .grids3{
+        display: grid;
+        grid-template-rows: 8% 29% 30% 30% 3%;
+        grid-template-areas: 
+        "header"
+        "section01"
+        "section02"
+        "section03"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .sections01{
+        grid-area: sections01;
+    }
+    .sections02{
+        grid-area: sections02;
+    }
+    .sections03{
+        grid-area: sections03;
+    }
+    .pie{
+        grid-area: footer;
+    }
+    .centros1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .centros, .section01, .section02, .section03{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1215,12 +1434,18 @@ footer{
         transition: all 2.5s;
     }
     .centros:hover .img001{
-        transform: translateX(-200px)
+        transform: translateX(-100px)
         }
         
         .centros:hover .img002{
-            transform: translateX(200px)
+            transform: translateX(100px)
             }
+            .centros1:hover .img002{
+                transform: translateX(200px)
+                }
+                .centros1:hover .img001{
+                    transform: translateX(-200px)
+                    }
     .header{
         grid-area: header;
     }
@@ -1245,7 +1470,7 @@ footer{
     justify-items: center;
     text-align: center;
     width: 600px;
-    height: 300px;
+    height: 400px;
     background-color: rgb(216, 32, 84);
     border-radius: 5px;
     border-style: unset;
