@@ -11,6 +11,25 @@ a{
 header{
     width: 100%;
 }
+.marcoARG{
+    justify-items: center;
+    text-align: center;
+    width: 250px;
+    height: 175px;
+    background-color: rgb(28, 192, 241);
+    border-radius: 5px;
+    border-style: outset;
+    border-color: rgb(216, 231, 9);
+}
+.informacionARG{
+    color: aliceblue;
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .marco{
     justify-items: center;
     text-align: center;
@@ -31,7 +50,7 @@ header{
 }
 .grid{
     display: grid;
-    grid-template-rows:  27% 46% 18% 9%;
+    grid-template-rows:  29% 44% 17% 10%;
     grid-template-areas: 
     "header"
     "centro"
@@ -71,7 +90,7 @@ header{
     align-items: center;
 
 }
-.centros, .section01, .section02, .section03{
+.centros, .section01, .section02, .section03, .section04, .section05{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -79,7 +98,7 @@ header{
     align-items: center;
 
 }
-.imagenes{
+.imagenes, .imagenes1{
     justify-content: center;
 }
 .imagen001, .imagen002{ 
@@ -108,6 +127,25 @@ header{
         .centros:hover .img002{
             transform: translateX(50px)
         }
+        .section01:hover .img001{
+            transform: translateX(-50px)
+        }
+        .section01:hover .img002{
+            transform: translateX(50px)
+        }
+        .section02:hover .img001{
+            transform: translateX(-50px)
+        }
+        .section02:hover .img002{
+            transform: translateX(50px)
+        }
+        .section03:hover .img001{
+            transform: translateX(-50px)
+        }
+        .section03:hover .img002{
+            transform: translateX(50px)
+        }
+
 .header{
     grid-area: header;
 }
@@ -120,6 +158,7 @@ header{
 .videos600{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 .head2{
     text-align: center;
@@ -441,27 +480,35 @@ transform: translateX(-50px)
     text-align: center;
 
 }
-.grids3{
+.grids5{
     display: grid;
-    grid-template-rows: 15% 27% 26% 27% 5%;
+    grid-template-rows: 9% 18% 17% 18% 17% 18% 3%;
     grid-template-areas: 
     "header"
     "section01"
     "section02"
     "section03"
+    "section04"
+    "section05"
     "footer";
 }
 .header{
     grid-area: header;
 }
-.sections01{
-    grid-area: sections01;
+.section01{
+    grid-area: section01;
 }
-.sections02{
-    grid-area: sections02;
+.section02{
+    grid-area: section02;
 }
-.sections03{
-    grid-area: sections03;
+.section03{
+    grid-area: section03;
+}
+.section04{
+    grid-area: section04;
+}
+.section05{
+    grid-area: section05;
 }
 .pie{
     grid-area: footer;
@@ -603,7 +650,7 @@ footer{
         align-items: center;
     
     }
-    .centros{
+    .centros, .section01, .section02, .section03, .section04, .section05{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -660,10 +707,28 @@ footer{
             transform: translateX(100px)
             }
             .centros1:hover .img002{
-                transform: translateX(200px)
+                transform: translateX(100px)
                 }
                 .centros1:hover .img001{
-                    transform: translateX(-200px)
+                    transform: translateX(-100px)
+                    }
+                    .section01:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section01:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section02:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section02:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section03:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section03:hover .img002{
+                        transform: translateX(100px)
                     }
     .header{
         grid-area: header;
@@ -684,6 +749,58 @@ footer{
         
     .centro:hover .img03{
             transform: translateX(100px)
+    }
+    .marcoARG{
+        justify-items: center;
+        text-align: center;
+        width: 350px;
+        height: 275px;
+        background-color: rgb(28, 192, 241);
+        border-radius: 5px;
+        border-style: outset;
+        border-color: rgb(216, 231, 9);
+    }
+    .informacionARG{
+        color: aliceblue;
+        text-align: center;
+        font-weight: 700;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .grids5{
+        display: grid;
+        grid-template-rows: 7% 18% 18% 18% 18% 18% 3%;
+        grid-template-areas: 
+        "header"
+        "section01"
+        "section02"
+        "section03"
+        "section04"
+        "section05"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .section01{
+        grid-area: section01;
+    }
+    .section02{
+        grid-area: section02;
+    }
+    .section03{
+        grid-area: section03;
+    }
+    .section04{
+        grid-area: section04;
+    }
+    .section05{
+        grid-area: section05;
+    }
+    .pie{
+        grid-area: footer;
     }
     .marco{
     justify-items: center;
@@ -1013,7 +1130,7 @@ footer{
         align-items: center;
     
     }
-    .centros{
+    .centros, .section01, .section02, .section03, .section04, .section05{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1068,6 +1185,31 @@ footer{
         .centros:hover .img002{
             transform: translateX(150px)
             }
+            .centros1:hover .img001{
+                transform: translateX(-150px)
+                }
+                
+                .centros1:hover .img002{
+                    transform: translateX(150px)
+                    }
+            .section01:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section01:hover .img002{
+                transform: translateX(150px)
+            }
+            .section02:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section02:hover .img002{
+                transform: translateX(150px)
+            }
+            .section03:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section03:hover .img002{
+                transform: translateX(150px)
+            }
     .header{
         grid-area: header;
     }
@@ -1094,6 +1236,25 @@ footer{
         .centros1:hover .img001{
             transform: translateX(-200px)
             }
+            .marcoARG{
+                justify-items: center;
+                text-align: center;
+                width: 550px;
+                height: 375px;
+                background-color: rgb(28, 192, 241);
+                border-radius: 5px;
+                border-style: outset;
+                border-color: rgb(216, 231, 9);
+            }
+            .informacionARG{
+                color: aliceblue;
+                text-align: center;
+                font-weight: 700;
+                align-items: center;
+                margin-top: 20px;
+                font-size: 25px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
     .marco{
     justify-items: center;
     text-align: center;
@@ -1111,6 +1272,39 @@ footer{
     margin-top: 20px;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .grids5{
+        display: grid;
+        grid-template-rows: 7% 18% 18% 18% 19% 18% 2%;
+        grid-template-areas: 
+        "header"
+        "section01"
+        "section02"
+        "section03"
+        "section04"
+        "section05"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .section01{
+        grid-area: section01;
+    }
+    .section02{
+        grid-area: section02;
+    }
+    .section03{
+        grid-area: section03;
+    }
+    .section04{
+        grid-area: section04;
+    }
+    .section05{
+        grid-area: section05;
+    }
+    .pie{
+        grid-area: footer;
     }
     .centro{
         width: 100%;
@@ -1410,7 +1604,7 @@ footer{
         align-items: center;
     
     }
-    .centros, .section01, .section02, .section03{
+    .centros, .section01, .section02, .section03, .section04, .section05{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1433,18 +1627,29 @@ footer{
         align-items: center;
         transition: all 2.5s;
     }
-    .centros:hover .img001{
-        transform: translateX(-100px)
-        }
-        
-        .centros:hover .img002{
-            transform: translateX(100px)
-            }
             .centros1:hover .img002{
                 transform: translateX(200px)
                 }
                 .centros1:hover .img001{
                     transform: translateX(-200px)
+                    }
+                    .section01:hover .img001{
+                        transform: translateX(-200px)
+                    }
+                    .section01:hover .img002{
+                        transform: translateX(200px)
+                    }
+                    .section02:hover .img001{
+                        transform: translateX(-200px)
+                    }
+                    .section02:hover .img002{
+                        transform: translateX(200px)
+                    }
+                    .section03:hover .img001{
+                        transform: translateX(-200px)
+                    }
+                    .section03:hover .img002{
+                        transform: translateX(200px)
                     }
     .header{
         grid-area: header;
@@ -1465,6 +1670,58 @@ footer{
         
     .centro:hover .img03{
             transform: translateX(200px)
+    }
+    .marcoARG{
+        justify-items: center;
+        text-align: center;
+        width: 600px;
+        height: 475px;
+        background-color: rgb(28, 192, 241);
+        border-radius: 5px;
+        border-style: outset;
+        border-color: rgb(216, 231, 9);
+    }
+    .informacionARG{
+        color: aliceblue;
+        text-align: center;
+        font-weight: 700;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .grids5{
+        display: grid;
+        grid-template-rows: 5% 18% 19% 18% 19% 19% 2%;
+        grid-template-areas: 
+        "header"
+        "section01"
+        "section02"
+        "section03"
+        "section04"
+        "section05"
+        "footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .section01{
+        grid-area: section01;
+    }
+    .section02{
+        grid-area: section02;
+    }
+    .section03{
+        grid-area: section03;
+    }
+    .section04{
+        grid-area: section04;
+    }
+    .section05{
+        grid-area: section05;
+    }
+    .pie{
+        grid-area: footer;
     }
     .marco{
     justify-items: center;
@@ -1541,7 +1798,7 @@ footer{
         justify-content: center;
     }
     .video601{
-        width: 854px;
+        width: 829px;
         height: 480px;
         margin-right: 10px;
         border: outset 15px rgb(141, 153, 174);
