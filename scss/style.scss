@@ -1,0 +1,10 @@
+@import "./utilities/variables";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+body{
+    width: 100%;
+    background-color:$bodycolor;
+}

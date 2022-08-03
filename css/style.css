@@ -1,0 +1,230 @@
+.grids {
+  display: grid;
+  grid-template-rows: 21% 27% 10% 26% 10% 6%;
+  grid-template-areas: "header" "centros" "videos600" "centros1" "videos602" "footer";
+}
+
+.pie {
+  grid-area: footer;
+}
+
+.centros1 {
+  grid-area: centros1;
+}
+
+.videos602 {
+  grid-area: videos602;
+}
+
+.header {
+  grid-area: header;
+}
+
+.centros {
+  grid-area: centros;
+}
+
+.videos600 {
+  grid-area: videos600;
+}
+
+header {
+  width: 100%;
+}
+
+.header .titulo {
+  margin: 0%;
+  font-weight: 700;
+  color: rgb(216, 151, 60);
+  text-align: center;
+  font-size: 15px;
+  font-family: "Secular One", sans-serif;
+  background-color: rgb(114, 9, 183);
+}
+
+.navbar, .navbar-expand-lg {
+  background-color: rgb(164, 19, 60);
+}
+.navbar .collapse, .navbar-expand-lg .collapse {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.navbar .collapse .navbar-brand, .navbar .collapse .nav-item, .navbar-expand-lg .collapse .navbar-brand, .navbar-expand-lg .collapse .nav-item {
+  font-size: 15px;
+  margin: 5px;
+}
+.navbar .collapse .navbar-brand .nav-link, .navbar .collapse .nav-item .nav-link, .navbar-expand-lg .collapse .navbar-brand .nav-link, .navbar-expand-lg .collapse .nav-item .nav-link {
+  background-color: rgb(192, 27, 74);
+}
+.navbar .collapse .navbar-brand .nav-link a, .navbar .collapse .nav-item .nav-link a, .navbar-expand-lg .collapse .navbar-brand .nav-link a, .navbar-expand-lg .collapse .nav-item .nav-link a {
+  text-decoration: none;
+  color: rgb(216, 151, 60);
+}
+
+.navegator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(105, 48, 195);
+}
+.navegator .li1 {
+  display: inline-flex;
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-bottom: 15px;
+  margin-right: 2px;
+  list-style-type: none;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(192, 27, 74);
+}
+.navegator .li1 .scale-in-hor-center {
+  -webkit-animation: scale-in-hor-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.centros, .centros1, .section01, .section02, .section03, .section04, .section05, .section06, .section07, .section08 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centros .H2titulo, .centros1 .H2titulo, .section01 .H2titulo, .section02 .H2titulo, .section03 .H2titulo, .section04 .H2titulo, .section05 .H2titulo, .section06 .H2titulo, .section07 .H2titulo, .section08 .H2titulo {
+  display: flex;
+  justify-content: center;
+}
+.centros .H2titulo .title, .centros1 .H2titulo .title, .section01 .H2titulo .title, .section02 .H2titulo .title, .section03 .H2titulo .title, .section04 .H2titulo .title, .section05 .H2titulo .title, .section06 .H2titulo .title, .section07 .H2titulo .title, .section08 .H2titulo .title {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 11px;
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+  font-family: "Secular One", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+.centros .marco, .centros1 .marco, .section01 .marco, .section02 .marco, .section03 .marco, .section04 .marco, .section05 .marco, .section06 .marco, .section07 .marco, .section08 .marco {
+  justify-items: center;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  background-color: rgb(216, 32, 84);
+  border-radius: 5px;
+  border-style: unset;
+  border-color: rgb(164, 19, 60);
+}
+.centros .marco .informacion, .centros1 .marco .informacion, .section01 .marco .informacion, .section02 .marco .informacion, .section03 .marco .informacion, .section04 .marco .informacion, .section05 .marco .informacion, .section06 .marco .informacion, .section07 .marco .informacion, .section08 .marco .informacion {
+  text-align: center;
+  font-weight: 700;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.centros .imagenes, .centros .imagenes1, .centros1 .imagenes, .centros1 .imagenes1, .section01 .imagenes, .section01 .imagenes1, .section02 .imagenes, .section02 .imagenes1, .section03 .imagenes, .section03 .imagenes1, .section04 .imagenes, .section04 .imagenes1, .section05 .imagenes, .section05 .imagenes1, .section06 .imagenes, .section06 .imagenes1, .section07 .imagenes, .section07 .imagenes1, .section08 .imagenes, .section08 .imagenes1 {
+  justify-content: center;
+}
+.centros .imagenes .imagen01, .centros .imagenes .imagen02, .centros .imagenes .imagen03, .centros .imagenes1 .imagen01, .centros .imagenes1 .imagen02, .centros .imagenes1 .imagen03, .centros1 .imagenes .imagen01, .centros1 .imagenes .imagen02, .centros1 .imagenes .imagen03, .centros1 .imagenes1 .imagen01, .centros1 .imagenes1 .imagen02, .centros1 .imagenes1 .imagen03, .section01 .imagenes .imagen01, .section01 .imagenes .imagen02, .section01 .imagenes .imagen03, .section01 .imagenes1 .imagen01, .section01 .imagenes1 .imagen02, .section01 .imagenes1 .imagen03, .section02 .imagenes .imagen01, .section02 .imagenes .imagen02, .section02 .imagenes .imagen03, .section02 .imagenes1 .imagen01, .section02 .imagenes1 .imagen02, .section02 .imagenes1 .imagen03, .section03 .imagenes .imagen01, .section03 .imagenes .imagen02, .section03 .imagenes .imagen03, .section03 .imagenes1 .imagen01, .section03 .imagenes1 .imagen02, .section03 .imagenes1 .imagen03, .section04 .imagenes .imagen01, .section04 .imagenes .imagen02, .section04 .imagenes .imagen03, .section04 .imagenes1 .imagen01, .section04 .imagenes1 .imagen02, .section04 .imagenes1 .imagen03, .section05 .imagenes .imagen01, .section05 .imagenes .imagen02, .section05 .imagenes .imagen03, .section05 .imagenes1 .imagen01, .section05 .imagenes1 .imagen02, .section05 .imagenes1 .imagen03, .section06 .imagenes .imagen01, .section06 .imagenes .imagen02, .section06 .imagenes .imagen03, .section06 .imagenes1 .imagen01, .section06 .imagenes1 .imagen02, .section06 .imagenes1 .imagen03, .section07 .imagenes .imagen01, .section07 .imagenes .imagen02, .section07 .imagenes .imagen03, .section07 .imagenes1 .imagen01, .section07 .imagenes1 .imagen02, .section07 .imagenes1 .imagen03, .section08 .imagenes .imagen01, .section08 .imagenes .imagen02, .section08 .imagenes .imagen03, .section08 .imagenes1 .imagen01, .section08 .imagenes1 .imagen02, .section08 .imagenes1 .imagen03 {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border: inset 10px rgb(141, 153, 174);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 2.5s;
+}
+.centros .video600, .centros1 .video600, .section01 .video600, .section02 .video600, .section03 .video600, .section04 .video600, .section05 .video600, .section06 .video600, .section07 .video600, .section08 .video600 {
+  display: flex;
+  justify-content: center;
+}
+.centros .video600 .video601, .centros1 .video600 .video601, .section01 .video600 .video601, .section02 .video600 .video601, .section03 .video600 .video601, .section04 .video600 .video601, .section05 .video600 .video601, .section06 .video600 .video601, .section07 .video600 .video601, .section08 .video600 .video601 {
+  border: outset 15px rgb(141, 153, 174);
+}
+
+.centros1:hover .img001 {
+  transform: translateX(-50px);
+}
+
+.centros1:hover .img002 {
+  transform: translateX(50px);
+}
+
+.centros:hover .img001 {
+  transform: translateX(-50px);
+}
+
+.centros:hover .img002 {
+  transform: translateX(50px);
+}
+
+footer {
+  width: 100%;
+  margin-top: 70px;
+  background-color: rgb(105, 48, 195);
+  display: grid;
+  grid-template-rows: repeat(2, fr);
+  grid-row-gap: 10px;
+  grid-template-areas: "info social";
+}
+
+.pie .info {
+  grid-area: info;
+  width: 6px;
+  height: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+  margin-right: 2px;
+}
+
+.social {
+  display: inline-flex;
+  flex-direction: row;
+  grid-area: social;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.social .ig, .social .facebook, .social .twitter, .social .paypal {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(237, 242, 244);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.grids{
+    display: grid;
+    grid-template-rows: 21% 27% 10% 26% 10% 6%;
+    grid-template-areas: 
+    "header"
+    "centros"
+    "videos600"
+    "centros1"
+    "videos602"
+    "footer";
+}
+.pie{
+    grid-area: footer;
+}
+.centros1{
+    grid-area: centros1;
+
+}
+.videos602{
+    grid-area: videos602;
+}
+.header{
+    grid-area: header;
+}
+.centros{
+    grid-area: centros;
+}
+.videos600{
+    grid-area: videos600
+}
