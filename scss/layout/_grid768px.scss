@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    grid-template-rows:  29% 44% 17% 10%;
+    grid-template-rows:  23% 47% 21% 9%;
     grid-template-areas: 
     "header"
     "centro"
@@ -8,10 +8,12 @@
     "footer";
 
 }
+
 @include Grid;
+
 .grids{
     display: grid;
-    grid-template-rows: 21% 27% 10% 26% 10% 6%;
+    grid-template-rows: 16% 25% 14% 26% 13% 6%;
     grid-template-areas: 
     "header"
     "centros"
@@ -20,6 +22,10 @@
     "videos602"
     "footer";
 }
+.header{
+    grid-area: header;
+}
+ 
 .pie{
     grid-area: footer;
 }
@@ -30,18 +36,10 @@
 .videos602{
     grid-area: videos602;
 }
-.header{
-    grid-area: header;
-}
-.centros{
-    grid-area: centros;
-}
-.videos600{
-    grid-area: videos600
-}
+
 .gridSections1{
     display: grid;
-    grid-template-rows: 61% 20% 19%;
+    grid-template-rows: 52% 34% 14%;
     grid-template-areas: 
     "head1"
     "center1"
@@ -58,9 +56,35 @@
     grid-area: footer;
 }
 
+.grids3{
+    display: grid;
+    grid-template-rows: 12% 28% 28% 29% 3%;
+    grid-template-areas: 
+    "header"
+    "section01"
+    "section02"
+    "section03"
+    "footer";
+}
+.header{
+    grid-area: header;
+}
+.sections01{
+    grid-area: sections01;
+}
+.sections02{
+    grid-area: sections02;
+}
+.sections03{
+    grid-area: sections03;
+}
+.pie{
+    grid-area: footer;
+}
+
 .grids4{
     display: grid;
-    grid-template-rows: 11% 21% 21% 21% 22% 4%;
+    grid-template-rows: 9% 22% 21% 23% 22% 3%;
     grid-template-areas: 
     "header"
     "section01"
@@ -87,9 +111,10 @@
 .pie{
     grid-area: footer;
 }
+
 .grids5{
     display: grid;
-    grid-template-rows: 9% 18% 17% 18% 17% 18% 3%;
+    grid-template-rows: 7% 18% 18% 18% 19% 18% 2%;
     grid-template-areas: 
     "header"
     "section01"
@@ -118,11 +143,12 @@
     grid-area: section05;
 }
 .pie{
-    grid-area: footer;
+    @extend .pie
 }
+
 .grids6{
     display: grid;
-    grid-template-rows: 7% 15% 15% 15% 15% 15% 15% 3%;
+    grid-template-rows: 6% 15% 16% 15% 16% 15% 15% 2%;
     grid-template-areas: 
     "header"
     "section01"
@@ -157,9 +183,10 @@
 .pie{
     grid-area: footer;
 }
+
 .grids7{
     display: grid;
-    grid-template-rows: 7% 13% 13% 13% 13% 13% 13% 13% 2%;
+    grid-template-rows: 5% 13% 14% 13% 14% 13% 13% 13% 2%;
     grid-template-areas: 
     "header"
     "section01"
@@ -198,9 +225,10 @@
 .pie{
     grid-area: footer;
 }
+
 .grids8{
     display: grid;
-    grid-template-rows: 6% 12% 12% 11% 12% 11% 12% 11% 11% 2%;
+    grid-template-rows: 4.3% 11.7% 12% 11% 12% 12% 12% 11% 12% 2%;
     grid-template-areas: 
     "header"
     "section01"

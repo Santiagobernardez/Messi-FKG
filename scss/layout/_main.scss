@@ -19,6 +19,25 @@
         
         }
     }
+    .marcoARG{
+        justify-items: center;
+        text-align: center;
+        width: 250px;
+        height: 175px;
+        background-color: rgb(28, 192, 241);
+        border-radius: 5px;
+        border-style: outset;
+        border-color: rgb(216, 231, 9);
+    .informacionARG{
+        color: aliceblue;
+        text-align: center;
+        font-weight: 700;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
     .marco{
         justify-items: center;
         text-align: center;
@@ -60,20 +79,66 @@
             border: outset 15px rgb(141, 153, 174);
         }
     }
-
-}
-.centros1:hover .img001{
-    transform: translateX(-50px)
-    }
-    
-.centros1:hover .img002{
-        transform: translateX(50px)
+    .centros1:hover .img001{
+        transform: translateX(-50px)
         }
-
-        .centros:hover .img001{
-            transform: translateX(-50px)
-        }
-        .centros:hover .img002{
+        
+    .centros1:hover .img002{
             transform: translateX(50px)
-        }
-
+            }
+    
+            .centros:hover .img001{
+                transform: translateX(-50px)
+            }
+            .centros:hover .img002{
+                transform: translateX(50px)
+            }
+            .section01:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section01:hover .img002{
+                transform: translateX(50px)
+            }
+            .section02:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section02:hover .img002{
+                transform: translateX(50px)
+            }
+            .section03:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section03:hover .img002{
+                transform: translateX(50px)
+            }
+            .section04:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section04:hover .img002{
+                transform: translateX(50px)
+            }
+            .section05:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section05:hover .img002{
+                transform: translateX(50px)
+            }
+            .section06:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section06:hover .img002{
+                transform: translateX(50px)
+            }
+            .section07:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section07:hover .img002{
+                transform: translateX(50px)
+            }
+            .section08:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section08:hover .img002{
+                transform: translateX(50px)
+            }
+}

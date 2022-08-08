@@ -3,6 +3,13 @@
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
+@import "./layout/grid500px";
+@import "./layout/grid768px";
+@import "./layout/grid1024px";
+@import "./layout/main500px";
+@import "./layout/main768px";
+@import "./layout/main1024px";
+
 
 body{
     width: 100%;
