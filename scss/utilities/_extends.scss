@@ -1,0 +1,13 @@
+.editmarcoARG{
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(28, 192, 241);
+    border-radius: 5px;
+    border-style: outset;
+    border-color: rgb(216, 231, 9);    
+}
+.marcoARG{
+    @extend .editmarcoARG;
+    width: 250px;
+    height: 175px;
+}

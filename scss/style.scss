@@ -1,4 +1,3 @@
-@import "./utilities/variables";
 @import "./layout/grid";
 @import "./layout/header";
 @import "./layout/main";
@@ -9,7 +8,9 @@
 @import "./layout/main500px";
 @import "./layout/main768px";
 @import "./layout/main1024px";
-
+@import "./utilities/extends";
+@import "./utilities/variables";
+@import "./utilities/mixins";
 
 body{
     width: 100%;

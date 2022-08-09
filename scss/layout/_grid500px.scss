@@ -9,18 +9,7 @@
 
 }
 
-header{
-    grid-area: header;
-}
-
-
-.video600{
-    grid-area: video600;
-}
-
-footer{
-    grid-area: footer;
-}
+@include Grid;
 
 .grids{
     display: grid;
