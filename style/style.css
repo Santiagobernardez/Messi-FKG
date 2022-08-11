@@ -298,7 +298,7 @@ header{
 
 .Texto0{
     text-align: center;
-    width: 260px;
+    width: 270px;
     height: 275px;
     font-size: 16px;
     font-weight: 600;
@@ -312,8 +312,8 @@ header{
 .Texto1{
     text-align: center;
     width: 200px;
-    height: 125px;
-    font-size: 18px;
+    height: 150px;
+    font-size: 15px;
     background-color: rgb(216, 32, 84);
     font-family: 'Cinzel', serif;
     border-radius: 5px;
