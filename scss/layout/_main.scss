@@ -1,4 +1,53 @@
-.centros, .centros1, .section01, .section02, .section03, .section04, .section05, .section06, .section07, .section08{
+.center0{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    .Texto0{
+        text-align: center;
+        width: 270px;
+        height: 275px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: rgb(216, 32, 84);
+        font-family: 'Cinzel', serif;
+        border-radius: 7px;
+        border-style: solid;
+        border-color: rgb(164, 19, 60);
+    }
+}
+    
+    .center1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+        .header1{
+        color: rgb(216, 151, 60);
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        width: 200px;
+        height: 25px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(164, 19, 60);
+        background-color: rgb(216, 32, 84);
+        font-size: 12px;
+    }
+    .Texto1{
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        font-size: 15px;
+        background-color: rgb(216, 32, 84);
+        font-family: 'Cinzel', serif;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(164, 19, 60);
+    }
+    }
+.centros, .center0, .center1, .centros1, .section01, .section02, .section03, .section04, .section05, .section06, .section07, .section08{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -53,7 +102,7 @@
     }
     .imagenes, .imagenes1{
         justify-content: center;
-        .imagen01, .imagen02, .imagen03{ 
+        .imagen001, .imagen002{ 
             margin-top: 10px;
             margin-right: 5px;
             margin-bottom: 10px;
@@ -67,12 +116,14 @@
         }
     
     }
-    .video600{
+    .videos600{
         display: flex;
         justify-content: center;
-        .video601{
-            border: outset 15px rgb(141, 153, 174);
-        }
+        margin-top: 40px;
+    }
+    .video601{
+        border: outset 20px rgb(141, 153, 174);
+
     }
     .centros1:hover .img001{
         transform: translateX(-50px)
@@ -136,4 +187,604 @@
             .section08:hover .img002{
                 transform: translateX(50px)
             }
+                
 }
+
+@include Celular{
+    .center0{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+        .Texto0{
+            text-align: center;
+            width: 450px;
+            height: 300px;
+            font-size: 22px;
+            font-weight: 600;
+            background-color: rgb(216, 32, 84);
+            font-family: 'Cinzel', serif;
+            border-radius: 7px;
+            border-style: solid;
+            border-color: rgb(164, 19, 60);
+        }
+    }
+        .center1{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 15px;
+            .header1{
+                color: rgb(216, 151, 60);
+                font-weight: 700;
+                text-align: center;
+                justify-content: center;
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: rgb(164, 19, 60);
+                background-color: rgb(216, 32, 84);
+                font-size: medium;
+            }
+            .Texto1{
+                text-align: center;
+                width: 250px;
+                height: 150px;
+                font-size: 22px;
+                background-color: rgb(216, 32, 84);
+                font-family: 'Cinzel', serif;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: rgb(164, 19, 60);
+            }
+        }
+    .centros, .center0, .center1, .centros1, .section01, .section02, .section03, .section04, .section05, .section06, .section07, .section08{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .H2titulo{
+            display: flex;
+            justify-content: center;
+            .title{
+                margin-top: 20px;
+                padding-top: 10px;
+                font-size: 20px;
+                font-weight: bolder;
+                font-family: 'Manrope', sans-serif;
+                font-family: 'Secular One', sans-serif;
+                text-decoration: underline;
+                text-align: center;
+            
+            }
+        }
+        .marcoARG{
+            justify-items: center;
+            text-align: center;
+            width: 350px;
+            height: 275px;
+            background-color: rgb(28, 192, 241);
+            border-radius: 5px;
+            border-style: outset;
+            border-color: rgb(216, 231, 9);
+        .informacionARG{
+            color: aliceblue;
+            text-align: center;
+            font-weight: 700;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        }
+        .marco{
+            justify-items: center;
+            text-align: center;
+            width: 350px;
+            height: 250px;
+            background-color: rgb(216, 32, 84);
+            border-radius: 5px;
+            border-style: unset;
+            border-color: rgb(164, 19, 60);
+            .informacion{
+                text-align: center;
+                font-weight: 700;
+                align-items: center;
+                margin-top: 20px;
+                font-size: 18px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+        .imagenes, .imagenes1{
+            justify-content: center;
+            .imagen001, .imagen002{ 
+                margin-top: 10px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                border: inset 10px rgb(141, 153, 174);
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 2.5s;
+            }
+        
+        }
+        .video600{
+            display: flex;
+            justify-content: center;
+        }
+        .video601{
+            width: 426px;
+            height: 240px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border: outset 20px rgb(141, 153, 174);
+        }
+    }
+    .centros:hover .img001{
+        transform: translateX(-100px)
+        }
+        
+        .centros:hover .img002{
+            transform: translateX(100px)
+            }
+            .centros1:hover .img002{
+                transform: translateX(100px)
+                }
+                .centros1:hover .img001{
+                    transform: translateX(-100px)
+                    }
+                    .section01:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section01:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section02:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section02:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section03:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section03:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section04:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section04:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section05:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section05:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section06:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section06:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section07:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section07:hover .img002{
+                        transform: translateX(100px)
+                    }
+                    .section08:hover .img001{
+                        transform: translateX(-100px)
+                    }
+                    .section08:hover .img002{
+                        transform: translateX(100px)
+                    }
+                
+        }    
+
+@include Tablet{
+    .center0{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+        .Texto0{
+            text-align: center;
+            width: 600px;
+            height: 350px;
+            font-size: 30px;
+            font-weight: 600;
+            background-color: rgb(216, 32, 84);
+            font-family: 'Cinzel', serif;
+            border-radius: 7px;
+            border-style: solid;
+            border-color: rgb(164, 19, 60);
+        }
+    }
+        .center1{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+            .header1{
+            color: rgb(216, 151, 60);
+            font-weight: 700;
+            text-align: center;
+            justify-content: center;
+            width: 300px;
+            height: 75px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: rgb(164, 19, 60);
+            background-color: rgb(216, 32, 84);
+            font-size: 28px;
+        }
+        .Texto1{
+            text-align: center;
+            width: 300px;
+            height: 230px;
+            font-size: 30px;
+            background-color: rgb(216, 32, 84);
+            font-family: 'Cinzel', serif;
+            border-radius: 25px;
+            border-style: solid;
+            border-color: rgb(164, 19, 60);
+        }
+        }
+    .centros, .center0, .center1, .centros1, .section01, .section02, .section03, .section04, .section05, .section06, .section07, .section08{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .H2titulo{
+            display: flex;
+            justify-content: center;
+            .title{
+                margin-top: 20px;
+                padding-top: 10px;
+                font-size: 25px;
+                font-weight: 900;
+                font-family: 'Manrope', sans-serif;
+                font-family: 'Secular One', sans-serif;
+                text-decoration: underline;
+                text-align: center;
+            
+            }
+        }
+        .marcoARG{
+            justify-items: center;
+            text-align: center;
+            width: 550px;
+            height: 375px;
+            background-color: rgb(28, 192, 241);
+            border-radius: 5px;
+            border-style: outset;
+            border-color: rgb(216, 231, 9);
+        .informacionARG{
+            color: aliceblue;
+            text-align: center;
+            font-weight: 700;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        }
+        .marco{
+            justify-items: center;
+            text-align: center;
+            width: 550px;
+            height: 300px;
+            background-color: rgb(216, 32, 84);
+            border-radius: 5px;
+            border-style: unset;
+            border-color: rgb(164, 19, 60);
+            .informacion{
+            text-align: center;
+            font-weight: 700;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+        .imagenes, .imagenes1{
+            justify-content: center;
+            .imagen001, .imagen002{ 
+                margin-top: 10px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                border: inset 10px rgb(141, 153, 174);
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 2.5s;
+            }
+        
+        }
+    .video600{
+        display: flex;
+        justify-content: center;
+    }
+    .video601{
+        width: 640px;
+        height: 360px;
+        margin-right: 10px;
+        border: outset 15px rgb(141, 153, 174);
+    }
+    }
+    .centros1:hover .img001{
+        transform: translateX(-150px)
+        }
+        
+    .centros1:hover .img002{
+            transform: translateX(150px)
+            }
+    
+            .centros:hover .img001{
+                transform: translateX(-150px)
+            }
+            .centros:hover .img002{
+                transform: translateX(150px)
+            }
+            .section01:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section01:hover .img002{
+                transform: translateX(150px)
+            }
+            .section02:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section02:hover .img002{
+                transform: translateX(50px)
+            }
+            .section03:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section03:hover .img002{
+                transform: translateX(150px)
+            }
+            .section04:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section04:hover .img002{
+                transform: translateX(150px)
+            }
+            .section05:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section05:hover .img002{
+                transform: translateX(150px)
+            }
+            .section06:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section06:hover .img002{
+                transform: translateX(150px)
+            }
+            .section07:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section07:hover .img002{
+                transform: translateX(150px)
+            }
+            .section08:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section08:hover .img002{
+                transform: translateX(150px)
+            }
+                
+}
+
+@include Desktop{
+    .center0{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+        .Texto0{
+            text-align: center;
+            width: 820px;
+            height: 620px;
+            font-size: 43px;
+            font-weight: 600;
+            background-color: rgb(216, 32, 84);
+            font-family: 'Cinzel', serif;
+            border-radius: 12px;
+            border-style: solid;
+            border-color: rgb(164, 19, 60);
+        }
+    }
+        
+        .center1{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            .header1{
+                color: rgb(216, 151, 60);
+                font-weight: 700;
+                text-align: center;
+                justify-content: center;
+                width: 400px;
+                height: 115px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: rgb(164, 19, 60);
+                background-color: rgb(216, 32, 84);
+                font-size: 42px;
+            }
+            .Texto1{
+                text-align: center;
+                width: 400px;
+                height: 330px;
+                font-size: 40px;
+                background-color: rgb(216, 32, 84);
+                font-family: 'Cinzel', serif;
+                border-radius: 25px;
+                border-style: solid;
+                border-color: rgb(164, 19, 60);
+            }
+        }
+    .centros, .center0, .center1, .centros1, .section01, .section02, .section03, .section04, .section05, .section06, .section07, .section08{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .H2titulo{
+            display: flex;
+            justify-content: center;
+            .title{
+                margin-top: 20px;
+                padding-top: 10px;
+                font-size: 45px;
+                font-weight: bolder;
+                font-family: 'Manrope', sans-serif;
+                font-family: 'Secular One', sans-serif;
+                text-decoration: underline;
+                text-align: center;
+            
+            }
+        }
+        .marcoARG{
+            justify-items: center;
+            text-align: center;
+            width: 550px;
+            height: 375px;
+            background-color: rgb(28, 192, 241);
+            border-radius: 5px;
+            border-style: outset;
+            border-color: rgb(216, 231, 9);
+        .informacionARG{
+            color: aliceblue;
+            text-align: center;
+            font-weight: 700;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        }
+        .marco{
+            justify-items: center;
+            text-align: center;
+            width: 550px;
+            height: 300px;
+            background-color: rgb(216, 32, 84);
+            border-radius: 5px;
+            border-style: unset;
+            border-color: rgb(164, 19, 60);
+            .informacion{
+            text-align: center;
+            font-weight: 700;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+        .imagenes, .imagenes1{
+            justify-content: center;
+            .imagen001, .imagen002{ 
+                margin-top: 10px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                border: inset 10px rgb(141, 153, 174);
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 2.5s;
+            }
+        
+        }
+        .video600{
+            display: flex;
+            justify-content: center;
+        }
+        .video601{
+            width: 829px;
+            height: 480px;
+            margin-right: 10px;
+            border: outset 15px rgb(141, 153, 174);
+        }
+
+    }
+    .centros1:hover .img001{
+        transform: translateX(-150px)
+        }
+        
+    .centros1:hover .img002{
+            transform: translateX(150px)
+            }
+    
+            .centros:hover .img001{
+                transform: translateX(-150px)
+            }
+            .centros:hover .img002{
+                transform: translateX(150px)
+            }
+            .section01:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section01:hover .img002{
+                transform: translateX(150px)
+            }
+            .section02:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section02:hover .img002{
+                transform: translateX(50px)
+            }
+            .section03:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section03:hover .img002{
+                transform: translateX(150px)
+            }
+            .section04:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section04:hover .img002{
+                transform: translateX(150px)
+            }
+            .section05:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section05:hover .img002{
+                transform: translateX(150px)
+            }
+            .section06:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section06:hover .img002{
+                transform: translateX(150px)
+            }
+            .section07:hover .img001{
+                transform: translateX(-50px)
+            }
+            .section07:hover .img002{
+                transform: translateX(150px)
+            }
+            .section08:hover .img001{
+                transform: translateX(-150px)
+            }
+            .section08:hover .img002{
+                transform: translateX(150px)
+            }
+}
+
